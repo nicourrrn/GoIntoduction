@@ -1,7 +1,10 @@
 package main
 
-import "GoIntoduction/repositories/filesystem"
+import (
+	"GoIntoduction/repositories/filesystem"
+	"fmt"
+)
 
 func main() {
-	filesystem.UserFileRepo{}.GetByEmail("Somedata")
+	fmt.Println(filesystem.UserFileRepo{}.GetByEmail("ex@g.com"))
 }
